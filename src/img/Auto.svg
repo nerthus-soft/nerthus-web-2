@@ -1,0 +1,45 @@
+<svg width="60" height="42" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+ <title>car</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <path id="path-1" d="m12,22c3.31,0 6,2.69 6,6c0,3.31 -2.69,6 -6,6c-3.31,0 -6,-2.69 -6,-6c0,-3.31 2.69,-6 6,-6zm34,0c3.31,0 6,2.69 6,6c0,3.31 -2.69,6 -6,6c-3.31,0 -6,-2.69 -6,-6c0,-3.31 2.69,-6 6,-6z"/>
+  <filter id="filter-2" filterUnits="objectBoundingBox" height="125.0%" width="106.5%" y="-12.5%" x="-3.3%"/>
+  <path id="path-3" d="m46,26c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zm-34,0c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2z"/>
+  <filter id="filter-4" filterUnits="objectBoundingBox" height="175.0%" width="107.9%" y="-37.5%" x="-3.9%"/>
+  <path id="path-5" d="m21.9999,14l12.9899,0l11,0c-2,0 -2.98,-2 -2.98,-2l-6.02,-8c-1.5,-2.28 -3.99,-4 -6.99,-4l-7.9999,0l-5.9999,0c-2.34,0 -4,1 -5,3l-4.66,11l15.6599,0l0,0z"/>
+  <filter id="filter-6" filterUnits="objectBoundingBox" height="121.4%" width="107.6%" y="-10.7%" x="-3.8%"/>
+  <path id="path-7" d="m56.9902,20l0.94,5.81c0.33,1.25 -0.5,2.19 -1.94,2.19l-4,0c0,-3.31 -2.69,-6 -6,-6c-3.31,0 -6,2.69 -6,6l-21.99,0c0,-3.31 -2.69,-6 -6,-6c-3.31,0 -6,2.69 -6,6l-4,0c-1.1,0 -2,-0.9 -2,-2l0,-6l0,-4c0,-1.1 0.9,-2 2,-2l4.34,0l15.66,0l12.99,0l11,0l3,0c4.97,0 7.41,3.03 8,6"/>
+  <filter id="filter-8" filterUnits="objectBoundingBox" height="121.4%" width="105.2%" y="-10.7%" x="-2.6%"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="44" width="62" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g id="car">
+    <g id="fill">
+     <g id="Combined-Shape">
+      <use id="svg_1" x="1" y="1.010128" xlink:href="#path-1" fill-rule="evenodd" fill="#AAB1BA"/>
+      <use id="svg_2" x="1" y="1.010128" xlink:href="#path-1" filter="url(#filter-2)" fill="black"/>
+     </g>
+     <g id="Combined-Shape">
+      <use id="svg_3" x="1" y="1.010128" xlink:href="#path-3" fill-rule="evenodd" fill="#E4F2DE"/>
+      <use id="svg_4" x="1" y="1.010128" xlink:href="#path-3" filter="url(#filter-4)" fill="black"/>
+     </g>
+     <g id="Combined-Shape">
+      <use id="svg_5" x="1" y="1.010128" xlink:href="#path-5" fill-rule="evenodd" fill="#E4F2DE"/>
+      <use id="svg_6" x="1" y="1.010128" xlink:href="#path-5" filter="url(#filter-6)" fill="black"/>
+     </g>
+     <g id="Fill-1">
+      <use id="svg_7" x="1" y="1.010128" xlink:href="#path-7" fill-rule="evenodd" fill="#E9CE9A"/>
+      <use id="svg_8" x="1" y="1.010128" xlink:href="#path-7" filter="url(#filter-8)" fill="black"/>
+     </g>
+    </g>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke="#51565F" id="stroke" d="m37,39.010128l2,0l-2,0l0,0l0,0l0,0zm6,0l16,0l-16,0l0,0l0,0l0,0zm-22,0l10,0l-10,0l0,0l0,0l0,0zm-20,0l14,0l-14,0l0,0l0,0l0,0zm27,-20l1,0l-1,0l0,0l0,0l0,0zm9.991,-8l-2,4l2,-4l0,0l0,0l0,0zm-14.991,-6l0,10l2,10m-24,-4l2,0l-2,0l0,0l0,0l0,0zm53.991,0l3,0l-3,0l0,0l0,0l0,0zm-2,8l4,0c1.438,0 2.266,-0.938 1.938,-2.188l-0.938,-5.812c-0.594,-2.969 -3.031,-6 -8,-6l-3,0c-2,0 -2.981,-2 -2.981,-2l-6.019,-8c-1.5,-2.281 -3.991,-4 -6.991,-4l-14,0c-2.344,0 -4,1 -5,3l-3,7m10,18l17.991,0l-17.991,0l0,0l0,0l0,0zm21.991,-14l-37.991,0c-1.104,0 -2,0.896 -2,2l0,10c0,1.104 0.896,2 2,2l0.516,0m9.484,-2c-1.104,0 -2,0.896 -2,2c0,1.104 0.896,2 2,2c1.104,0 2,-0.896 2,-2c0,-1.104 -0.896,-2 -2,-2l0,0l0,0l0,0l0,0zm6,2c0,-3.313 -2.687,-6 -6,-6c-3.313,0 -6,2.687 -6,6c0,3.313 2.687,6 6,6c3.313,0 6,-2.687 6,-6l0,0l0,0l0,0l0,0zm27.991,-2c-1.104,0 -2,0.896 -2,2c0,1.104 0.896,2 2,2c1.105,0 2,-0.896 2,-2c0,-1.104 -0.895,-2 -2,-2l0,0l0,0l0,0l0,0zm0,8c-3.313,0 -6,-2.687 -6,-6c0,-3.313 2.687,-6 6,-6c3.314,0 6,2.687 6,6c0,3.313 -2.686,6 -6,6l0,0l0,0l0,0l0,0z"/>
+   </g>
+  </g>
+ </g>
+</svg>
