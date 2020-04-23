@@ -30,18 +30,28 @@ export default class Food extends Component {
                         Nerthus Food
                         <Header.Subheader>
                           Solucion Open Source para que te claves unas
-                          empanaditas.
+                          empanaditas. (en desarrollo)
                         </Header.Subheader>
                       </Header>
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
                     <Grid.Column>
-                      <Button
-                        content="Implementalo"
-                        icon="right arrow"
-                        labelPosition="right"
-                      />
+                      <Button.Group>
+                        <Button
+                          disabled
+                          positive
+                          labelPosition="right"
+                          icon="angle double right"
+                          content="Probalo gratis"
+                        />
+                        <Button
+                          disabled
+                          labelPosition="right"
+                          icon="server"
+                          content="Implementalo"
+                        />
+                      </Button.Group>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>

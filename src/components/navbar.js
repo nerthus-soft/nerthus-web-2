@@ -1,13 +1,13 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { Component } from "react";
 import { Menu, Container } from "semantic-ui-react";
 import Logo from "../img/Logo.png";
 
 const scrollToRef = (ref) => {
-  var resto = 50;
+  var navBarSize = 50;
   if (window.innerWidth < 768) {
-    resto = 170;
+    navBarSize = 170;
   }
-  window.scrollTo(0, ref.current.offsetTop - resto);
+  window.scrollTo(0, ref.current.offsetTop - navBarSize);
 };
 
 export default class Navbar extends Component {
@@ -18,13 +18,17 @@ export default class Navbar extends Component {
     scrollToRef(myRefLink);
   };
 
+  sendMail = () => {
+    window.open("mailto:josemonzon@nerthus.com.ar", "_blank");
+  };
+
   render() {
     const { activeItem } = this.state;
     return (
       <Menu stackable fixed="top">
         <Container>
           <Menu.Item>
-            <img src={Logo} />
+            <img alt="Logo nerthus" src={Logo} />
           </Menu.Item>
           <Menu.Menu position="right">
             <Menu.Item
@@ -44,7 +48,7 @@ export default class Navbar extends Component {
               name="Contacto"
               myRefLink={this.props.contactoRef}
               active={activeItem === "Contacto"}
-              onClick={this.handleItemClick}
+              onClick={this.sendMail}
             />
           </Menu.Menu>
         </Container>

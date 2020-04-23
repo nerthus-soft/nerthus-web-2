@@ -1,0 +1,53 @@
+version: "3"
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs:ro
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+    labels:
+      - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
+
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    restart: always
+    environment:
+      - NGINX_PROXY_CONTAINER=nginx-proxy
+    volumes:
+      - certs:/etc/nginx/certs:rw
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  nerthus-prod:
+    container_name: nerthus-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=nerthus.com.ar,www.nerthus.com.ar
+      - LETSENCRYPT_HOST=nerthus.com.ar,www.nerthus.com.ar
+      - LETSENCRYPT_EMAIL=josemonzon@nerthus.com.ar
+
+  redirect:
+    image: morbz/docker-web-redirect
+    restart: always
+    environment:
+      - VIRTUAL_HOST=git.nerthus.com.ar
+      - LETSENCRYPT_HOST=git.nerthus.com.ar
+      - LETSENCRYPT_EMAIL=josemonzon@nerthus.com.ar
+      - REDIRECT_TARGET=github.com/nerthus-soft
+
+volumes:
+  certs:
+  html:
+  vhostd:

@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import { Form, Container, Segment } from "semantic-ui-react";
-
-const options = [
-  { key: "m", text: "Male", value: "male" },
-  { key: "f", text: "Female", value: "female" },
-  { key: "o", text: "Other", value: "other" },
-];
+import { Button, Container, Segment, Icon, Header } from "semantic-ui-react";
 
 export default class Contacto extends Component {
   state = {};
@@ -18,30 +12,15 @@ export default class Contacto extends Component {
     const { nombre, email, mensaje } = this.state;
     return (
       <Segment basic>
-        <Container>
-          <Form onSubmit={this.handleSubmit}>
-            <Form.Group widths="equal">
-              <Form.Input
-                placeholder="Name"
-                name="nombre"
-                value={nombre}
-                onChange={this.handleChange}
-              />
-              <Form.Input
-                placeholder="Email"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.TextArea
-              label="Mensaje"
-              name="mensaje"
-              value={mensaje}
-              onChange={this.handleChange}
-            />
-            <Form.Button content="Submit">Submit</Form.Button>
-          </Form>
+        <Header as="h2" icon textAlign="center">
+          <Icon name="mail" circular />
+          <Header.Content>Contacto</Header.Content>
+        </Header>
+        <Container center>
+          <Button circular color="facebook" icon="facebook" />
+          <Button circular color="twitter" icon="twitter" />
+          <Button circular color="linkedin" icon="linkedin" />
+          <Button circular color="google plus" icon="google plus" />
         </Container>
       </Segment>
     );

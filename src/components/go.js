@@ -26,18 +26,29 @@ export default class Go extends Component {
                       <Header inverted as="h2">
                         Nerthus Go
                         <Header.Subheader>
-                          Solucion Open Source para que te pidas un remis.
+                          Solucion Open Source para que te pidas un remis. (en
+                          desarrollo)
                         </Header.Subheader>
                       </Header>
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
                     <Grid.Column>
-                      <Button
-                        content="Implementalo"
-                        icon="right arrow"
-                        labelPosition="right"
-                      />
+                      <Button.Group>
+                        <Button
+                          disabled
+                          positive
+                          labelPosition="right"
+                          icon="angle double right"
+                          content="Probalo gratis"
+                        />
+                        <Button
+                          disabled
+                          labelPosition="right"
+                          icon="server"
+                          content="Implementalo"
+                        />
+                      </Button.Group>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
