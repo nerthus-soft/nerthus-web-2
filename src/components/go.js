@@ -22,34 +22,30 @@ export default class Go extends Component {
               <Grid.Column>
                 <Grid padded>
                   <Grid.Row>
-                    <Grid.Column>
-                      <Header inverted as="h2">
-                        Nerthus Go
-                        <Header.Subheader>
-                          Solucion Open Source para que te pidas un remis. (en
-                          desarrollo)
-                        </Header.Subheader>
-                      </Header>
-                    </Grid.Column>
+                    <Header inverted as="h2">
+                      Nerthus Go
+                      <Header.Subheader>
+                        Solucion Open Source para que te pidas un remis. (en
+                        desarrollo)
+                      </Header.Subheader>
+                    </Header>
                   </Grid.Row>
                   <Grid.Row>
-                    <Grid.Column>
-                      <Button.Group>
-                        <Button
-                          disabled
-                          positive
-                          labelPosition="right"
-                          icon="angle double right"
-                          content="Probalo gratis"
-                        />
-                        <Button
-                          disabled
-                          labelPosition="right"
-                          icon="server"
-                          content="Implementalo"
-                        />
-                      </Button.Group>
-                    </Grid.Column>
+                    <Button.Group>
+                      <Button
+                        disabled
+                        positive
+                        labelPosition="right"
+                        icon="angle double right"
+                        content="Probalo"
+                      />
+                      <Button
+                        disabled
+                        labelPosition="right"
+                        icon="server"
+                        content="Hostealo"
+                      />
+                    </Button.Group>
                   </Grid.Row>
                 </Grid>
               </Grid.Column>

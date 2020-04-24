@@ -15,7 +15,7 @@ import Logo from "../img/Logo.png";
 
 export default class Pie extends Component {
   render() {
-    var toContact = {
+    const toContact = {
       sendMail: function () {
         window.open("mailto:josemonzon@nerthus.com.ar", "_blank");
       },
@@ -42,7 +42,7 @@ export default class Pie extends Component {
               Mapa del sitio
             </List.Item>
             <Modal trigger={<List.Item as="a">Contacto</List.Item>} closeIcon>
-              <Header icon="address card" content="Redes sociales" />
+              <Header icon="address card" content="Contacto" />
               <Modal.Content>
                 <Header as="h4" icon textAlign="center">
                   <Header.Content>
